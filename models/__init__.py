@@ -8,6 +8,7 @@ from models.court import Court
 from models.checkpoint import Checkpoint
 from models.resident import Resident
 from models.visitor import Visitor
+from models.vehicle import Vehicle
 
 
 
