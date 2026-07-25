@@ -9,6 +9,8 @@ from models.checkpoint import Checkpoint
 from models.resident import Resident
 from models.visitor import Visitor
 from models.vehicle import Vehicle
+from models.parking import ParkingSlot, ParkingRecord, BlockingIncident
+from models.history import CheckpointLog, MovementHistory
 
 
 
