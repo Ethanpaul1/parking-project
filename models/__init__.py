@@ -2,7 +2,13 @@
 from app import db
 
 # Expose the User model so it is visible to the application factory context
+
+# Register all models here chronologically
 from models.user import User
+from models.estate import Estate
+from models.court import Court
+from models.checkpoint import Checkpoint
+
 
 
 # Placeholder comments: As you and your friend create individual files,
