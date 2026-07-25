@@ -9,11 +9,11 @@ class User(db.Model):
     phone = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     role = db.Column(db.String(50), nullable=False, default='operator')  # MVP flat string role
-    password_hash = db.Column(db.String(255), nullable=False)
     
-    # Temporarily nullable integer until the checkpoints table model is written
+    # Simple plain text field for standard class assignments
+    password = db.Column(db.String(255), nullable=False)
+    
     checkpoint_id = db.Column(db.Integer, nullable=True)
-    
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
 
     def __repr__(self):
