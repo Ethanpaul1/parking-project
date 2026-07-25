@@ -1,13 +1,13 @@
 # Import the shared db instance from your core app factory module
 from app import db
 
-# Expose the User model so it is visible to the application factory context
-
 # Register all models here chronologically
 from models.user import User
 from models.estate import Estate
 from models.court import Court
 from models.checkpoint import Checkpoint
+from models.resident import Resident
+from models.visitor import Visitor
 
 
 
